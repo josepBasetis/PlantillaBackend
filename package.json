@@ -1,0 +1,26 @@
+{
+  "name": "dbtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sequelize": "node_modules/.bin/sequelize",
+    "migrate": "npm run sequelize db:migrate",
+    "seed": "npm run sequelize db:seed:all",
+    "start": "node server.js",
+    "test": "NODE_ENV=test node app.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.27.4",
+    "fastify-swagger": "^5.1.0",
+    "sequelize-cli": "^6.4.1",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "pino-pretty": "^7.6.0",
+    "sequelize": "^6.17.0",
+    "tap": "^16.0.1"
+  }
+}
